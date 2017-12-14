@@ -11,6 +11,13 @@ h1 {
   margin: 5px auto;
 }
 
+h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+  margin: 5px auto;
+}
+
 em {
   font-weight: 500;
 }
@@ -22,6 +29,11 @@ p {
 a {
   color: white;
   text-decoration: none;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
 }
 
 .links {
@@ -46,8 +58,45 @@ a {
   background-color: rgba(255,255,255,0.5);
 }
 
-.name {
+.transition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.email {
   text-align: center;
+}
+
+.email:hover {
+  font-size: 17px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 80%;
+  margin: 15px;
+}
+
+.proj {
+  height: 48%;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.bg {
+  background-color: rgba(0,0,0,0.5);
 }
 
 #gradient {
@@ -65,6 +114,16 @@ a {
   align-items: center;
 }
 
+#index {
+  color: rgba(255,255,255,0.5);
+  margin-left: 30px;
+}
+
+#index:hover {
+  color: rgba(255,255,255,0.8);
+}
+
+
 @media (max-width:450px) {
   h1 {
     font-size: 40px;
@@ -72,5 +131,14 @@ a {
 
   p, a {
     font-size: 12px;
+  }
+
+  #email:hover {
+    font-size: 13px;
+  }
+
+  .projects {
+    flex-direction: column;
+    width: 80%;
   }
 }
