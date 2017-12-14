@@ -11,13 +11,6 @@ h1 {
   margin: 5px auto;
 }
 
-h2 {
-  color: white;
-  font-size: 30px;
-  font-weight: 200;
-  margin: 5px auto;
-}
-
 em {
   font-weight: 500;
 }
@@ -29,6 +22,12 @@ p {
 a {
   color: white;
   text-decoration: none;
+}
+
+img {
+  width: 70%;
+  height: 70%;
+  margin: 10px;
 }
 
 .title-bar {
@@ -90,9 +89,25 @@ a {
   width: 48%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 5px;
+}
+
+.proj-description {
+  width: 90%;
+  margin: 5px;
+}
+
+.proj-link {
+  color: white;
+  font-size: 26px;
+  font-weight: 200;
+  margin: 5px auto;
+}
+
+.proj-link:hover {
+  font-size: 28px;
+  font-weight: 300;
 }
 
 .bg {
@@ -133,6 +148,11 @@ a {
     font-size: 12px;
   }
 
+  img {
+    width: 100%;
+    height: 60%;
+  }
+
   #email:hover {
     font-size: 13px;
   }
@@ -140,5 +160,16 @@ a {
   .projects {
     flex-direction: column;
     width: 80%;
+    overflow-y: auto;
+  }
+
+  .proj {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .landscape {
+    height: 40%;
   }
 }
